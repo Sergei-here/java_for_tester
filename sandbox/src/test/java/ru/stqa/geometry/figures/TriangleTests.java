@@ -8,6 +8,14 @@ public class TriangleTests {
     void canCalculateArea(){
         var result = Triangle.TriangleArea( 3.0, 4.0, 5.0);
         Assertions.assertEquals(6.0, result);
-        
     }
+
+    @Test
+    void testEquality2() {
+        var t1 = new Triangle (3.0, 4,5.0);
+        var t2 = new Triangle (5.0, 4,3.0);
+        Assertions.assertEquals(t1, t2);
+
+    }
+
 }
